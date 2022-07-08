@@ -1,0 +1,21 @@
+a= 1
+b=100
+n=int(b**(1/2))
+d,final=[2],[]
+def privenum(x,y):
+  for i in range(x,y-x,2):
+    d.append(i)
+  try:
+      del d[1]
+  except:
+      pass
+  for num in d:
+    for m in range(3,num-1):
+        if m<num:
+            if num%m ==0:
+                try:
+                    del d[num]
+                except:
+                    pass
+privenum(a,b)
+print(d)
