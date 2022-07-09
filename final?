@@ -5,6 +5,7 @@ def privenum(x,y):
   star= x if a%2 ==1 else x+1         #시작숫자 홀수로 샐성
   for i in range(star,y-x,2):         #숫자열 생성
     d.append(i)
+  d.append(2)                         # 2 추가
   try:
     del d[1]                          #1 삭제
   except:
@@ -15,4 +16,4 @@ def privenum(x,y):
         d.remove(num)                 #삭제
         break        
 privenum(a,b)                         #함수호출
-print(d) 
+print(d)
