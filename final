@@ -18,3 +18,4 @@ def privenum(x,y):
 privenum(a,b)                         #함수호출
 print(d)
 print("time :", time.time() - start)
+  
